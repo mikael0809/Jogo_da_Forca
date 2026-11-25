@@ -1,0 +1,52 @@
+*{box-sizing:border-box}
+body{margin:0;background:#101a24;color:#d6e0e8;font-family:Arial,sans-serif}
+button,input,select{font:inherit}
+.pagina{width: min(760px,94%);margin:0 auto;padding:18px 8px}
+header{display:flex;align-items:baseline;gap:18px;border-bottom:1px solid #294052;padding-bottom:8px}
+header h1{font-size:25px;margin:0;color:#52c4d5;font-weight:600}
+header span,footer{font-size:12px;color:#8296a5}
+h2{font-size:19px;font-weight:500;color:#52c4d5;margin:20px 0 14px}
+.inicio{width:320px;max-width:100%;margin:48px 0 0 8px}
+label{display:block;font-size:13px;color:#aebdca;margin:14px 0 5px}
+input,select{display:block;width:100%;padding:8px;background:#1b2a36;color:#e3edf3;border:1px solid #435665;border-radius:2px}
+button{background:#243b4b;color:#dce8ef;border:1px solid #4c6979;padding:7px 12px;border-radius:2px;cursor:pointer}
+button:hover:not(:disabled){background:#31566a}
+button:disabled{opacity:.5;cursor:default}
+.botao{margin-top:18px;min-width:100px;background:#087e9b;border:0}
+.erro{background:#4a252b;color:#ffdce0;padding:8px;margin:18px 0;width:max-content;max-width:100%}
+.erro button{margin-left:10px;padding:2px 7px}
+.jogo{margin-top:22px}
+.linha-titulo{display:flex;align-items:center;gap:25px}
+.linha-titulo h2{margin:0}
+.linha-titulo button{margin-top:14px}
+.resumo{display:flex;flex-wrap:wrap;gap:8px 24px;margin:15px 0;color:#b9c8d3;font-size:13px}
+.resumo div{display:flex;gap:5px}
+.resumo span{color:#8296a5}
+.dica{font-size:14px;margin:20px 0 12px;color:#c2d0da}
+.jogo-centro{display:flex;align-items:center;gap:24px;margin:12px 0 18px}
+.forca{width:155px;height:145px;stroke:#51bdcf;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.mascara{font-size:25px;letter-spacing:5px;overflow-wrap:anywhere;color:#f0f5f8}
+.jogo-centro p{font-size:13px;color:#a9bac6;margin:8px 0}
+.teclado{display:flex;flex-wrap:wrap;gap:5px;max-width:500px;margin:18px 0}
+.tecla{width:34px;height:34px;padding:0;background:#233846}
+.tecla:disabled{opacity:.3}
+.resultado{margin:24px 0;padding:8px 0}
+.resultado h2{margin-bottom:8px}
+.resultado p{font-size:14px}
+footer{margin-top:65px;border-top:1px solid #294052;padding-top:9px}
+@media(max-width:500px){.pagina{padding:14px}.jogo-centro{gap:10px}.forca{width:120px}.mascara{font-size:20px;letter-spacing:3px}.resumo{gap:8px 14px}}
+
+.ranking{margin:22px 0 0;max-width:560px}
+.texto-ranking,.vazio{font-size:13px;color:#a9bac6;margin:14px 0}
+.lista-ranking{margin-top:18px}
+.cabecalho-ranking,.item-ranking{display:grid;grid-template-columns:38px 1fr 90px 65px;gap:10px;align-items:center;padding:10px 8px}
+.cabecalho-ranking{font-size:12px;color:#8296a5;border-bottom:1px solid #294052}
+.item-ranking{font-size:13px;border-bottom:1px solid #223744;color:#cbd8e0}
+.item-ranking b{font-weight:500;color:#e5edf2;overflow-wrap:anywhere}
+.item-ranking strong{text-align:right;color:#52c4d5}
+@media(max-width:430px){.cabecalho-ranking,.item-ranking{grid-template-columns:25px 1fr 65px 48px;gap:6px;padding:9px 4px}}
+
+.tecla-usada{background:#344451;color:#8193a0;border-color:#344451;text-decoration:line-through}
+.cabecalho-ranking,.item-ranking{grid-template-columns:38px 1fr 120px 65px}
+.item-ranking span:nth-child(3){overflow-wrap:anywhere;color:#a9bac6}
+@media(max-width:430px){.cabecalho-ranking,.item-ranking{grid-template-columns:25px 1fr 82px 48px}}
